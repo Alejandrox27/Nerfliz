@@ -1,0 +1,32 @@
+#frm_principal{
+background-color: rgba(20, 20, 20,240);
+border-top-right-radius:40px;
+border-bottom-right-radius:5px;
+}
+
+*{
+color:white;
+background:transparent;
+border:none;
+}
+
+#btn_create{
+    background-color: rgba(0,0, 0,200);
+border-radius:15px;
+padding:8px;
+}
+
+#btn_create:hover{
+    background-color: rgba(45,45,45,200);
+}
+
+
+#frm_image{
+border-bottom-left-radius:40px;
+border-top-left-radius:5px;
+    background-color: rgb(8, 8, 8);
+}
+
+QLineEdit{
+border-bottom:2px solid white;
+}
