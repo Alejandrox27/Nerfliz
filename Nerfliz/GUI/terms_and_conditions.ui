@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Terms_and_conditions</class>
+ <widget class="QDialog" name="Terms_and_conditions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Terms and conditions</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/Nerfliz_logo.png</normaloff>../images/Nerfliz_logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frm_principal{
+	
+background-color: rgba(20, 20, 20,240);
+border-top-right-radius:40px;
+border-bottom-right-radius:5px;
+}
+
+*{
+color:white;
+background:transparent;
+border:none;
+}
+
+#btn_agree,#btn_dont_agree{
+	background-color: rgba(0, 0, 0,200);
+border-radius:15px;
+padding:8px;
+}
+
+#btn_agree:hover,#btn_dont_agree:hover{
+	background-color: rgba(45,45,45,200);
+}
+
+
+#frm_image{
+border-bottom-left-radius:40px;
+border-top-left-radius:5px;
+	background-color: rgb(8, 8, 8);
+}
+
+QLineEdit{
+border-bottom:2px solid white;
+}
+
+QPlainTextEdit{
+border:1px solid white;
+border-radius:10px;
+padding:2px;
+}
+
+QScrollArea#txt_terms_and_conditions{
+background-color:transparent;
+    }
+    QScrollBar:vertical {
+        background: transparent;
+        width: 7px;
+        border-radius: 4px;
+    }
+    QScrollBar:handle:vertical {
+        background: rgb(83, 83, 83);
+        border-radius: 3px;
+    }</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frm_image">
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="lbl_image">
+        <property name="maximumSize">
+         <size>
+          <width>170</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../images/logo_nerfliz_tipo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frm_principal">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frm_termsandconditions_text">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item alignment="Qt::AlignLeft">
+          <widget class="QLabel" name="lbl_terms_and_conditions">
+           <property name="font">
+            <font>
+             <pointsize>25</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Terms and conditions</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QPushButton" name="btn_close_terms_conditions">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../images/x.svg</normaloff>../images/x.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frm_terms_and_conditions">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPlainTextEdit" name="txt_terms_and_conditions">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="plainText">
+            <string>TERMS AND CONDITIONS
+
+            A.  SALE OR DISTRIBUTION WITHOUT AUTHORIZATION OF ALEJANDRO MEJIA IS PROHIBITED.
+            B.  ALTERATION OF THE SOURCE CODE OR DESIGN OF THE GRAPHICAL INTERFACES IS PROHIBITED.
+            C.  ALEJANDRO MEJIA IS NOT RESPONSIBLE FOR ANY MISUSE OF THIS SOFTWARE.
+
+          THE LEGAL AGREEMENTS SET FORTH BELOW GOVERN YOUR USE OF THIS SOFTWARE.
+          (ALEJANDRO MEJIA), ARE NOT RESPONSIBLE FOR THE USE YOU MAKE OF THIS SOFTWARE AND ITS SERVICES.
+          USE OF THIS SOFTWARE AND ITS SERVICES. TO AGREE TO THESE TERMS CLICK (I AGREE)
+          IF YOU DO NOT AGREE TO THESE TERMS, CLICK (I DO NOT AGREE) AND DO NOT USE THIS SOFTWARE.
+
+          FOR MORE INFORMATION ABOUT OUR PRODUCTS OR SERVICES, PLEASE VISIT
+          https://github.com/Alejandrox27</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="lay_hor_buttons">
+           <item>
+            <widget class="QPushButton" name="btn_agree">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>I agree</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_dont_agree">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>I don't agree</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frm_footer">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+          <widget class="QLabel" name="lbl_footer">
+           <property name="text">
+            <string>Copyright - Alejandro Mejía - Nerfliz 2023</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
