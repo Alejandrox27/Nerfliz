@@ -11,6 +11,11 @@
 </div><br>
 
 <div align="center">
+  <h3> <strong> Used Languages, Frameworks, and Tools </strong></h3>
+  <img src="https://skillicons.dev/icons?i=python,sqlite,qt,css" alt="skills actively learning logos"/>
+</div>
+
+<div align="center">
   <h2>Version.</h2>
   <p>The Versión of Nerfliz is V.1.0.
   </p>
